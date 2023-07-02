@@ -6,7 +6,7 @@ function ListGroup() {
         'London',
         'Paris'
     ];
-    items = []
+    // items = []
 
     if (items.length === 0)
         return <div className="alert alert-primary">No items available yet</div>
