@@ -1,8 +1,13 @@
-import Message from './Message';
+import Navbar from './components/Navbar';
 import ListGroup from './components/ListGroup';
 
 function App() {
-  return <div><Message /> <ListGroup /></div>
+  return <>
+    <Navbar />
+    <div className="container py-5">
+    <ListGroup />
+    </div>
+    </>
 }
 
 export default App;
