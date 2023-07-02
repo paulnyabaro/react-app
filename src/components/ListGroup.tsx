@@ -1,12 +1,15 @@
 function ListGroup() {
-    const items = [
+    let items = [
         'New York',
         'San Francisco',
         'Tokyo',
         'London',
         'Paris'
     ];
+    items = []
 
+    if (items.length === 0)
+        return <div className="alert alert-primary">No items available yet</div>
     
     return (
         <>
