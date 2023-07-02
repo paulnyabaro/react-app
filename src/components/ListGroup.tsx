@@ -16,7 +16,7 @@ function ListGroup() {
         <h1>List Group</h1>
         {items.length === 0 && <div className="alert alert-primary">No items available yet</div>}
         <ul className="list-group">
-            {items.map((item) => <li key={item} className="list-group-item">{item}</li>)}
+            {items.map((item) => <li key={item} className="list-group-item" onClick={() => console.log('Clicked')}>{item}</li>)}
         </ul>
         </>
     );
