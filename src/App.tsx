@@ -8,11 +8,16 @@ function App() {
     'Tokyo',
     'London',
     'Paris'
-];
+  ];
+
+  const handleSelectItem = (item: string) => {
+
+  }
+
   return <>
     <Navbar />
     <div className="container py-5">
-    <ListGroup items = {items} heading='Cities'/>
+    <ListGroup items = {items} heading='Cities' onSelectItem={handleSelectItem}/>
     </div>
     </>
 }
