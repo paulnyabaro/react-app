@@ -17,7 +17,7 @@ function ListGroup({items, heading}: Props) {
     
     return (
         <>
-        <h1>List Group</h1>
+        <h1>{heading}</h1>
         {items.length === 0 && <div className="alert alert-primary">No items available yet</div>}
         <ul className="list-group">
             {items.map((item, index) => 
