@@ -6,7 +6,7 @@ interface Props {
     heading: string;
     onSelectItem: (item: string) => void;
 }
-function ListGroup({items, heading}: Props) {
+function ListGroup({items, heading, onSelectItem}: Props) {
 
     // items = []
 
@@ -25,7 +25,10 @@ function ListGroup({items, heading}: Props) {
             <li 
                 key={item} 
                 className={ selectedIndex === index ? "list-group-item active": "list-group-item"} 
-                onClick={() => {setSelectedIndex(index)}}
+                onClick={() => {
+                    setSelectedIndex(index);
+                    onSelectItem(item);
+                }}
             >
                     {item}
             </li>)}
