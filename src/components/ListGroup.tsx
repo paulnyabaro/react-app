@@ -18,9 +18,9 @@ function ListGroup(props: Props) {
     return (
         <>
         <h1>List Group</h1>
-        {items.length === 0 && <div className="alert alert-primary">No items available yet</div>}
+        {props.items.length === 0 && <div className="alert alert-primary">No items available yet</div>}
         <ul className="list-group">
-            {items.map((item, index) => 
+            {props.items.map((item, index) => 
             <li 
                 key={item} 
                 className={ selectedIndex === index ? "list-group-item active": "list-group-item"} 
