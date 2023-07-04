@@ -1,11 +1,11 @@
 interface Props{
-    text: string;
+    children: string;
 }
 
-const Alert = ({ text }: Props) => {
+const Alert = ({ children }: Props) => {
     return (
         <div className="alert alert-primary">
-            {text}
+            {children}
         </div>
     )
 }
