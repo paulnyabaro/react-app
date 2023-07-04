@@ -19,7 +19,9 @@ function App() {
     <Navbar />
     <div className="container py-5">
     <ListGroup items = {items} heading='Cities' onSelectItem={handleSelectItem}/>
-    <Alert text='Hello world'></Alert>
+    <Alert>
+      Hello the World of React!
+    </Alert>
     </div>
     </>
 }
