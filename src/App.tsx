@@ -20,7 +20,8 @@ function App() {
     <div className="container py-5">
     <ListGroup items = {items} heading='Cities' onSelectItem={handleSelectItem}/>
     <Alert>
-      Hello the World of React!
+      <h2>Attention</h2>
+      <p>Nothing serious here! Just have a good time</p>
     </Alert>
     </div>
     </>
