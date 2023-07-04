@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import ListGroup from './components/ListGroup';
+import Alert from './components/Alert';
 
 function App() {
   let items = [
@@ -18,6 +19,7 @@ function App() {
     <Navbar />
     <div className="container py-5">
     <ListGroup items = {items} heading='Cities' onSelectItem={handleSelectItem}/>
+    <Alert text='Hello world'></Alert>
     </div>
     </>
 }
